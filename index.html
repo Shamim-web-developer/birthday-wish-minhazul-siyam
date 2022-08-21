@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0,user-scalable=no">
+    <meta http-equiv="Refresh" content="2; url=birthday.html" />
+    <link rel="preload" as="image" type="image/png" href="font.png" >
+    <link rel="preload" as="image" type="image/png" href="pic.png" >
+    <link rel="preload" as="audio" type="audio/mpeg" href="song.mp3">
+<title>Birthday Wish..🎂🎂</title>
+<style>
+    .content{
+        display: none;
+    }
+    .loader {
+        height:100%;
+        width: 100%;
+        overflow: hidden;
+        background-color: White;
+        position: absolute;
+    }
+    .loader>div {
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        border: 15px solid gray;
+        border-top-color: White;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border-radius: 50%;
+        animation: spin 1s infinite linear;
+    }
+    @keyframes spin {
+        100%{
+            transform: rotate(360deg);
+        }
+   
+    }
+    h1{
+    position: relative;
+    top: 500px;
+    left: 25%;
+    width:0ch;
+    overflow:hidden;
+    white-space:nowrap;
+    font-family:Sans-serif;
+    font-style:armenian;
+    letter-spacing:4px;
+    font-size:40px;
+    animation:html 5s infinite steps(20);
+    border-right:3px solid black;
+    color:gray;
+    
+}
+@keyframes html{
+    0%{
+        width:0.5ch;    
+}
+    10%{
+        width:1.5ch;
+}
+    10%{
+        width:6.5ch;
+}
+    10%{
+        width:9.5ch;
+    }
+</style>
+<body>
+    <div class="loader">
+        <div></div>
+    </div>
+    <div class="content">
+    </div>
+    <h1>Loading...</h1>
+    
+</body>
+</html>
